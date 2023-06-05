@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:shared_multi_role/login.dart';
+import 'package:shared_multi_role/sing_up.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 class Student extends StatefulWidget {
   const Student({Key? key}) : super(key: key);
@@ -68,7 +68,7 @@ class _StudentState extends State<Student> {
 
                 SharedPreferences sp = await SharedPreferences.getInstance();
                 sp.clear();
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
 
               },
               child: Container(
